@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "ABC Areal";
+  src: url("fonts/ABCArealSuperfamilyVariable.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC Areal Mono";
+  src: url("fonts/ABCArealMonoVariable.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* hyphens: auto; */
+  text-wrap: pretty;
+}
+
+body {
+  font-family: "ABC Areal", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px;
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.intro {
+  max-width: 640px;
+  text-wrap: wrap;
+  text-wrap: pretty;
+}
+
+.tiny {
+  font-size: 12px;
+}
+
+#chart-wrap {
+  width: 100%;
+  max-width: 1400px;
+  overflow-x: auto;
+  font-family: "ABC Areal Mono", Arial, sans-serif;
+}
+
+svg {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a {
+  color: blue;
+  cursor: pointer;
+}
+
+a text {
+  text-decoration: none;
+}

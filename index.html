@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Care outside the institution</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="preload"
+      href="fonts/ABCArealSuperfamilyVariable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/ABCArealMonoVariable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Care outside the institution</h1>
+    <div class="intro">
+      <p>
+        This graph traces the evolution of the terms "<a
+          href="https://books.google.com/ngrams/graph?content=mutual+aid&amp;year_start=1950&amp;year_end=2022&amp;corpus=en&amp;smoothing=3"
+          target="_blank"
+          >mutual aid</a
+        >" and "<a
+          href="https://books.google.com/ngrams/graph?content=self-care&amp;year_start=1950&amp;year_end=2022&amp;corpus=en&amp;smoothing=3"
+          target="_blank"
+          >self-care</a
+        >" in the literature from 1950 to the present day. "Mutual aid" has
+        been in decline for decades, while "self-care" has kept rising,
+        overtaking it around 1980: care shifts from the group to the
+        individual, something each person manages alone, through apps,
+        platforms and protocols. Audre Lorde had
+        described caring for oneself as
+        <a
+          href="https://www.are.na/block/4436850"
+          target="_blank"
+          >"an act of political warfare"</a
+        >; today the same word sells wellness.
+      </p>
+      <p>
+        The interfaces that connect a person in difficulty with the help that
+        exists (a phone number, a manual, a map, a group of volunteers) were
+        often built from below by feminist, migrant and activist networks.
+        They have therefore been gradually absorbed into apps and platforms,
+        or criminalised. Nevertheless, in recent years, new forms of
+        self-organisation have been building care interfaces that are simple,
+        shared and made to last.
+      </p>
+      <!-- <p class="tiny">
+        You can contribute to the timeline behind this chart
+        <a
+          href="https://github.com/sinanatra/web-design-timeline/blob/main/data/timeline.md"
+          target="_blank"
+          >here</a
+        >.
+      </p> -->
+    </div>
+
+    <div id="chart-wrap"></div>
+    <div id="error"></div>
+
+    <script src="d3.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
