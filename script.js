@@ -273,34 +273,40 @@ async function render() {
     .filter((b) => b.items.length);
   // Curves share one y scale so that two terms stay comparable. Their end
   // labels are placed before the timeline items, so each label stays next to
-  // the end of its line and the items move around it.
+  // the end of its line and the items move around it. If the branches end up
+  // above the top of the plot, the plot grows by that amount and is laid out
+  // again, so no label is ever cut off.
   const allValues = curves.flatMap((c) => c.values);
-  const yScale = d3
-    .scaleLinear()
-    .domain(d3.extent(allValues))
-    .range([TREND_Y_BASE, TREND_Y_TOP]);
-  const curveLabels = curves
-    .filter((c) => c.label)
-    .map((c) => ({
-      c,
-      x: xScale(c.startYear + c.values.length - 1) + 10,
-      y: yScale(c.values[c.values.length - 1]) - 6,
-    }))
-    .sort((a, b) => b.y - a.y);
-  for (let i = 1; i < curveLabels.length; i++)
-    if (curveLabels[i - 1].y - curveLabels[i].y < LINE_H)
-      curveLabels[i].y = curveLabels[i - 1].y - LINE_H;
-  const reserved = curveLabels.map((l) => ({
-    x1: l.x - GAP,
-    x2: l.x + estimateWidth(l.c.label) + GAP,
-    y: l.y,
-  }));
-  const laidOutByBranch = layoutBranches(
-    branchList,
-    xScale,
-    maxDate,
-    reserved,
-  );
+  let plotHeight = parseFloat(settings.height) || DEFAULT_HEIGHT;
+  let yScale, curveLabels, laidOutByBranch;
+  for (let attempt = 0; attempt < 6; attempt++) {
+    setHeight(plotHeight);
+    yScale = d3
+      .scaleLinear()
+      .domain(d3.extent(allValues))
+      .range([TREND_Y_BASE, TREND_Y_TOP]);
+    curveLabels = curves
+      .filter((c) => c.label)
+      .map((c) => ({
+        c,
+        x: xScale(c.startYear + c.values.length - 1) + 10,
+        y: yScale(c.values[c.values.length - 1]) - 6,
+      }))
+      .sort((a, b) => b.y - a.y);
+    for (let i = 1; i < curveLabels.length; i++)
+      if (curveLabels[i - 1].y - curveLabels[i].y < LINE_H)
+        curveLabels[i].y = curveLabels[i - 1].y - LINE_H;
+    const reserved = curveLabels.map((l) => ({
+      x1: l.x - GAP,
+      x2: l.x + estimateWidth(l.c.label) + GAP,
+      y: l.y,
+    }));
+    laidOutByBranch = layoutBranches(branchList, xScale, maxDate, reserved);
+    const topY = d3.min(Object.values(laidOutByBranch).flat(), (it) => it.y);
+    const overflow = TOP_MARGIN + LINE_H - topY;
+    if (!(overflow > 0)) break;
+    plotHeight += Math.ceil(overflow);
+  }
 
   let maxX2 = xScale(maxDate);
   for (const laidOut of Object.values(laidOutByBranch))

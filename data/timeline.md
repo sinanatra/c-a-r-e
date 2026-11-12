@@ -73,12 +73,25 @@ curve (both share the same vertical scale).
 | 1972 | Jane arrests | criminalisation | practice | https://en.wikipedia.org/wiki/Jane_Collective | source: en.wikipedia, Jane Collective (1972 raid) |
 | 1975 | Adele Faccio arrested | criminalisation | practice | https://en.wikipedia.org/wiki/Adele_Faccio | source: it.wikipedia, Adele Faccio (arrested at a Radical Party conference on abortion; CISA founder); the English page does not cover the arrest. TO VERIFY: exact date (early 1975) |
 | 1988 | Food Not Bombs arrests | criminalisation | practice | https://en.wikipedia.org/wiki/Food_Not_Bombs | source: en.wikipedia, Food Not Bombs (15 August 1988, 9 activists arrested in San Francisco for serving food without a permit) |
-| 2001 | Diaz raid | criminalisation | practice | https://en.wikipedia.org/wiki/2001_raid_on_Armando_Diaz | source: en.wikipedia, 2001 raid on Armando Diaz (Genoa G8, July 2001; includes the attack on the Indymedia building) |
 | 2004 | A/I wiretapped | criminalisation | tool | https://en.wikipedia.org/wiki/Autistici/Inventati | source: en.wikipedia, Autistici/Inventati (2004–2005) |
 | 2017 | Iuventa seized | criminalisation | practice | https://en.wikipedia.org/wiki/Iuventa_(ship) | NGO code of conduct and Iuventa seizure, 2017 |
 | 2019 | Women on Web blocked | criminalisation | tool | https://ooni.org/post/2019-blocking-abortion-rights-websites-women-on-waves-web/ | source: OONI report, 29 October 2019 (report date, not start of blocking) |
 | 2022 | Facebook abortion case | criminalisation | tool | https://en.wikipedia.org/wiki/Privacy_concerns_with_Facebook | source: en.wikipedia, Privacy concerns with Facebook ("In 2022, Nebraska police...") |
 | 2026 | A/I shut down | criminalisation | tool | https://keepitfree.ai/it/ | services closed from 18/9/2026 (source: keepitfree.ai) |
+| 1963 | Lifeline | self-organisation | practice | https://en.wikipedia.org/wiki/Lifeline_(crisis_support_service) | source: en.wikipedia, Lifeline (crisis support service), founded 16 March 1963 in Sydney |
+| 1974 | Women's Aid | self-organisation | practice | https://en.wikipedia.org/wiki/Women%27s_Aid_Federation_of_England | source: en.wikipedia, Women's Aid Federation of England (first federation 1974, after the first refuge) |
+| 1994 | Emergency | self-organisation | practice | https://en.wikipedia.org/wiki/Emergency_(organization) | source: en.wikipedia, Emergency (organization), founded 1994 by Gino Strada |
+| 1999 | Women on Waves | self-organisation | practice | https://en.wikipedia.org/wiki/Women_on_Waves | source: en.wikipedia, Women on Waves (formation 1999) |
+| 2020 | Covid mutual aid groups | self-organisation | practice | https://en.wikipedia.org/wiki/Mutual_aid_(organization_theory) | source: en.wikipedia, Mutual aid (organization theory), on mutual aid in the COVID-19 pandemic; TO VERIFY: a page specific to the 2020 groups |
+| 1978 | Alma-Ata Declaration | institutionalisation | tool | https://en.wikipedia.org/wiki/Declaration_of_Alma-Ata | source: en.wikipedia, Declaration of Alma-Ata (1978, primary health care) |
+| 1983 | CDC National AIDS Hotline | institutionalisation | tool | https://en.wikipedia.org/wiki/Timeline_of_HIV/AIDS | source: en.wikipedia, Timeline of HIV/AIDS ("The CDC National AIDS Hotline is established", listed among 1983 events); TO VERIFY: exact year |
+| 1996 | WebMD | institutionalisation | tool | https://en.wikipedia.org/wiki/WebMD | source: en.wikipedia, WebMD (founded 14 June 1996) |
+| 2004 | PatientsLikeMe | institutionalisation | tool | https://en.wikipedia.org/wiki/PatientsLikeMe | source: en.wikipedia, PatientsLikeMe (founded 2004): peer support as a data platform |
+| 2007 | HealthVault | institutionalisation | tool | https://en.wikipedia.org/wiki/Microsoft_HealthVault | source: en.wikipedia, Microsoft HealthVault (released 2007) |
+| 2017 | Replika | institutionalisation | tool | https://en.wikipedia.org/wiki/Replika | source: en.wikipedia, Replika (released November 2017) |
+| 1986 | Sanctuary movement indicted | criminalisation | practice | https://en.wikipedia.org/wiki/Sanctuary_movement | source: en.wikipedia, Sanctuary movement ("In 1986 ... the Justice Department indicted 16 Americans and Mexicans") |
+| 2004 | Cap Anamur impounded | criminalisation | practice | https://en.wikipedia.org/wiki/Cap_Anamur | source: en.wikipedia, Cap Anamur (ship impounded in Sicily in 2004 after rescuing migrants) |
+| 2014 | Arnold Abbott arrested | criminalisation | practice | https://en.wikipedia.org/wiki/Jack_Seiler | source: en.wikipedia, Jack Seiler (November 2014: Arnold Abbott, 90, arrested for feeding the homeless in Fort Lauderdale) |
 
 ## Branches
 
